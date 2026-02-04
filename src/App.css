@@ -1,0 +1,214 @@
+/* ========================================
+   THEME VARIABLES - LIGHT (DEFAULT)
+   ======================================== */
+:root {
+    --bg-body: #ffffff;
+    --bg-card: #ffffff;
+    --bg-card-header: #f8f9fa;
+    --bg-input: #ffffff;
+    --text-primary: #212529;
+    --text-muted: #6c757d;
+    --border-color: #dee2e6;
+}
+
+/* ========================================
+   THEME VARIABLES - DARK (SCHRITT 0006)
+   NEUE PALETTE:
+   #000000 - Schwarz (Darkest)
+   #1d1d1d - Body Hintergrund
+   #272727 - Card Hintergrund
+   #2e2f30 - Card Header / Inputs
+   #363636 - Borders / Hover
+   ======================================== */
+[data-theme="dark"] {
+    --bg-body: #1d1d1d;
+    --bg-card: #272727;
+    --bg-card-header: #2e2f30;
+    --bg-input: #2e2f30;
+    --text-primary: #edf2f4;
+    --text-muted: #a8a8a8;
+    --border-color: #363636;
+}
+
+/* ========================================
+   BODY BACKGROUND - WICHTIG!
+   ======================================== */
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff !important;
+    color: #212529;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body[data-theme="dark"] {
+    background-color: #1d1d1d !important;
+    color: #edf2f4 !important;
+}
+
+/* ========================================
+   DARK THEME - CARDS
+   ======================================== */
+[data-theme="dark"] .card {
+    background-color: #272727;
+    border-color: #363636;
+    color: #edf2f4;
+}
+
+[data-theme="dark"] .card-header {
+    background-color: #2e2f30;
+    border-color: #363636;
+    color: #edf2f4;
+}
+
+/* ========================================
+   DARK THEME - LIST ITEMS
+   ======================================== */
+[data-theme="dark"] .list-group-item {
+    background-color: #272727;
+    border-color: #363636;
+    color: #edf2f4;
+}
+
+[data-theme="dark"] .list-group-item:hover {
+    background-color: #2e2f30;
+}
+
+/* ========================================
+   DARK THEME - FORMS
+   ======================================== */
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select {
+    background-color: #2e2f30;
+    border-color: #363636;
+    color: #edf2f4;
+}
+
+[data-theme="dark"] .form-control:focus,
+[data-theme="dark"] .form-select:focus {
+    background-color: #2e2f30;
+    border-color: #4a90d9;
+    color: #edf2f4;
+    box-shadow: 0 0 0 0.2rem rgba(74, 144, 217, 0.25);
+}
+
+[data-theme="dark"] .form-control::placeholder {
+    color: #a8a8a8;
+}
+
+[data-theme="dark"] .form-label {
+    color: #edf2f4;
+}
+
+/* ========================================
+   DARK THEME - TEXT
+   ======================================== */
+[data-theme="dark"] .text-muted {
+    color: #a8a8a8 !important;
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+    color: #edf2f4;
+}
+
+[data-theme="dark"] p,
+[data-theme="dark"] span,
+[data-theme="dark"] label,
+[data-theme="dark"] small {
+    color: #edf2f4;
+}
+
+/* ========================================
+   DARK THEME - ALERTS 
+   Filter Container etc.
+   ======================================== */
+[data-theme="dark"] .alert-secondary {
+    background-color: #2e2f30;
+    color: #edf2f4;
+    border-color: #363636;
+}
+
+/* ========================================
+   DARK THEME - BUDGET/REST/AUSGEGEBEN CARDS
+   BLEIBEN UNVERÄNDERT!
+   ======================================== */
+[data-theme="dark"] .alert-success {
+    background-color: #264638;
+    color: #95d5b2;
+    border-color: #2d5a3d;
+}
+
+[data-theme="dark"] .alert-warning {
+    background-color: #887540;
+    color: #ffd166;
+    border-color: #81702b;
+}
+
+[data-theme="dark"] .alert-danger {
+    background-color: #974444;
+    color: #f4a4a4;
+    border-color: #6b2a2a;
+}
+
+[data-theme="dark"] .alert-primary {
+    background-color: #314357;
+    color: #90cdf4;
+    border-color: #223346;
+}
+
+/* ========================================
+   DARK THEME - PROGRESS BARS
+   ======================================== */
+[data-theme="dark"] .progress {
+    background-color: #2e2f30;
+}
+
+/* ========================================
+   DARK THEME - FILTER CARD
+   ======================================== */
+[data-theme="dark"] .bg-light {
+    background-color: #272727 !important;
+}
+
+/* ========================================
+   DARK THEME - MODAL
+   ======================================== */
+[data-theme="dark"] .modal-content {
+    background-color: #272727;
+    border-color: #363636;
+    color: #edf2f4;
+}
+
+[data-theme="dark"] .modal-header {
+    border-color: #363636;
+}
+
+[data-theme="dark"] .modal-footer {
+    border-color: #363636;
+}
+
+[data-theme="dark"] .btn-link {
+    color: #90cdf4;
+}
+
+[data-theme="dark"] .btn-close {
+    filter: invert(1);
+}
+
+/* ========================================
+   DARK THEME - DROPDOWN
+   ======================================== */
+[data-theme="dark"] .dropdown-menu {
+    background-color: #272727;
+    border-color: #363636;
+    color: #edf2f4;     }
